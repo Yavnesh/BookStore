@@ -4,7 +4,7 @@ const db = require('../db');
 const config = require('../config');
 const jwt = require('jsonwebtoken');
 const middleware = require('../middleware');
-const User = require('../models/User');
+const User = require('../models/user');
 
 // Register new user
 router.post('/register', async (req, res) => {
