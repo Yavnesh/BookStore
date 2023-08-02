@@ -2,10 +2,10 @@ const express = require("express");
 const app = express();
 const userRoutes = require('./routes/userRoutes');
 const bookRoutes = require('./routes/bookRoutes');
-const Port = process.env.port || 5000;
+const PORT = process.env.PORT || 5000;
 
 // Start a server on port 5000
-app.listen(Port,()=> console.log(`server is running on port ${Port}`));
+app.listen(PORT,()=> console.log(`server is running on port ${PORT}`));
 
 // Parse JSON bodies for incoming requests
 app.use(express.json());
